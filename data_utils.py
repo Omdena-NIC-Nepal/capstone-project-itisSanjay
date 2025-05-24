@@ -7,12 +7,12 @@ import geopandas as gpd
 @st.cache_data
 def load_data():
     """Loading the CSV data"""
-    df = pd.read_csv(r"C:\Users\Sanjay Sah\Desktop\sanjay_sah_git\Final_try.csv")
+    df = pd.read_csv(r"C:\Users\Sanjay Sah\Desktop\sanjay_sah_git\capstone-project-itisSanjay\Final_try.csv")
     return df
 
 def load_shapefile():
     """Loading the shapefile"""
-    gdf = gpd.read_file(r"C:\Users\Sanjay Sah\Desktop\sanjay_sah_git\District\District.shp")
+    gdf = gpd.read_file(r"C:\Users\Sanjay Sah\Desktop\sanjay_sah_git\capstone-project-itisSanjay\District")
     return gdf
 
 def extract_features_X(df):
