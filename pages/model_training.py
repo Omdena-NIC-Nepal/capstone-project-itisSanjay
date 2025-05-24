@@ -79,3 +79,5 @@ def show(df):
             # Optionally, you can display the classification report
             st.subheader("Classification Report")
             st.write(report)
+
+

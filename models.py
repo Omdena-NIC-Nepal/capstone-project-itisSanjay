@@ -119,7 +119,6 @@ def model_train(model_type, X_train, y_train, X_test, y_test):
     cm = confusion_matrix(y_test, y_pred)
 
 
-
     return best_model, test_accuracy, cv_scores, report, cm
 
 # Save model
@@ -132,4 +131,5 @@ def save_model(best_model, filename='trained_model.pkl'):
 def load_model(filename='trained_model.pkl'):
     with open(filename, 'rb') as file:
         return pickle.load(file)
+
 
